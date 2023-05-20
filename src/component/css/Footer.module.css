@@ -1,0 +1,19 @@
+.container {
+  background-color: #2a2828;
+  display: flex;
+  padding: 22px 15px;
+  justify-content: center;
+}
+
+.container p {
+  margin: 0;
+  font-size: 15px;
+  color: #efefef;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .container p {
+    font-size: 13px;
+  }
+}

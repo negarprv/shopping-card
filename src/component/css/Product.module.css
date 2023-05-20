@@ -1,0 +1,103 @@
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  margin: 15px;
+  transition: all 0.4s;
+}
+.container:hover {
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.container img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.container h3 {
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 0;
+  color: dimgray;
+  cursor: default;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.container p {
+  color: gray;
+  font-size: 16px;
+  margin: 13px;
+}
+
+.addBtn {
+  border: 0;
+  padding: 8px 31px;
+  border-radius: 15px;
+  background-color: #00b700;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: all 0.3s;
+}
+
+.addBtn:hover {
+  transform: translateY(-3px);
+}
+
+.addBtn:active {
+  transform: translateY(1px);
+}
+
+.increaseDecreaseBtn {
+  width: 34px;
+  height: 34px;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding: 0 !important;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.numberBtn {
+  border: 0;
+  padding: 8px 25px;
+  border-radius: 15px;
+  background-color: #00b700;
+  color: white;
+  font-size: 15px;
+  cursor: default;
+  margin-top: 5px;
+  transition: all 0.3s;
+}
+
+.trashBtn {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.btnsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 500px) {
+  .container img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    cursor: pointer;
+  }
+  .container h3 {
+    font-size: 15px;
+  }
+}

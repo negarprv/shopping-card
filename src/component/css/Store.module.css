@@ -1,0 +1,26 @@
+.mainContainer {
+  margin-top: 98px;
+  min-height: 77vh;
+  margin-bottom: 20px;
+}
+
+.mainContainer h1 {
+  padding-left: 41px;
+  font-size: 24px;
+  font-weight: 600;
+  color: dimgrey;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  place-content: center;
+}
+
+@media (max-width: 500px) {
+  .mainContainer h1 {
+    font-size: 19px;
+  }
+}

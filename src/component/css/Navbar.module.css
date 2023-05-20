@@ -1,0 +1,144 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2828;
+  padding: 5px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.container h1 {
+  font-size: 25px;
+  color: #efefef;
+  padding-left: 30px;
+}
+
+.liContainer {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.liContainer li {
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.liContainer li a {
+  transition: all 0.3s;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.liContainer li a:hover {
+  border-bottom: 1px solid white;
+}
+
+.categories {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  color: #2a2828;
+  padding: 10px;
+  flex-direction: column;
+  top: 43px;
+  border-radius: 0px 10px 10px 10px;
+  background-color: #efefef;
+  transition: all 0.4s;
+  transform: translateY(20%);
+}
+
+.categories a {
+  font-size: 15px;
+  margin: 5px;
+  white-space: nowrap;
+  padding-bottom: 5px;
+  color: #2a2828 !important;
+}
+
+.categories a:hover {
+  border-bottom: 1px solid #2a2828 !important;
+}
+
+.categoriesLi {
+  position: relative;
+}
+.categoriesLi:hover .categories {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+.shoppingIcon {
+  position: relative;
+}
+
+.shoppingIcon img {
+  width: 30px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.shoppingIcon span {
+  position: absolute;
+  background-color: #00b700;
+  color: white;
+  right: -3px;
+  width: 18px;
+  font-size: 10px;
+  height: 18px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.hamburgerManu {
+  position: absolute;
+  top: 77px;
+  right: 0;
+  transition: all 0.4s;
+}
+
+.hamburgerManu ul {
+  flex-direction: column;
+  width: 250px;
+  background-color: #00b700;
+  height: 100vh;
+  justify-content: start;
+  padding-top: 10px;
+}
+
+.hamburgerManuDisplay {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .hamburgerManuDisplay {
+    display: inline;
+  }
+  .ulDisplay {
+    display: none;
+  }
+  .box {
+    width: 25%;
+    justify-content: space-evenly;
+  }
+}
