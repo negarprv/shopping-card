@@ -9,12 +9,15 @@ import { ProductsContext } from "../context/ProductContextProvider";
 //components
 import Product from "./shared/Product";
 
+//git
+import loading from "../images/loading.gif";
+
 const Store = ({ title, type }) => {
   const products = useContext(ProductsContext);
   console.log(products);
   return (
     <div className={styles.mainContainer}>
-      {products ? (
+      {products.length !== 0 ? (
         <div>
           <h1>{title}</h1>
           <div className={styles.container}>
@@ -46,7 +49,10 @@ const Store = ({ title, type }) => {
           </div>
         </div>
       ) : (
-        <p>loading</p>
+        <div className={styles.loading}>
+          <img src={loading} alt="loading" />
+          <p>loading</p>
+        </div>
       )}
     </div>
   );

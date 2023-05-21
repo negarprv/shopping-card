@@ -19,6 +19,13 @@
   place-content: center;
 }
 
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 @media (max-width: 500px) {
   .mainContainer h1 {
     font-size: 19px;
